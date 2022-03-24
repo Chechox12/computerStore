@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="compra.css">
   <title>Computer Store</title>
 </head>
 <body>
@@ -32,16 +32,26 @@
     </div>
   </section>
 
-  <section class="board">
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
-    <div class="box"><img src="https://picsum.photos/id/0/300" alt=""></div>
+  <section id="toHide">
+    <div class="square">
+      number of computers purchased:  <input id="computers" type="text"> <br> <br>
+      <button class="button" onclick="calculatePurchase(), hide(), show()">Calculate</button>
+    </div>
+  </section>
+
+  <section id="toShow">
+    <div class="square">
+      <h2><b>Purchase Order</b></h2>
+      <img id="icon" src="img/icon.jpg" alt="">
+      <h3>Purchase value:</h3>
+      <input id="r1" type="text" readonly="readonly">
+      <h3>Discount value (%) :</h3>
+      <input id="r2" type="text" readonly="readonly">
+      <h3>Total:</h3>
+      <input id="r3" type="text" readonly="readonly"><br><br>
+
+      <p id="message"></p>
+    </div>
   </section>
 
   <footer>
@@ -49,6 +59,6 @@
   </footer>
 
 
-  <script src="scripts.js"></script>
+  <script src="scriptscompra.js"></script>
 </body>
 </html>

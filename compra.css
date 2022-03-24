@@ -55,21 +55,34 @@ nav ul li a:hover {
   background: #1d3247;
 }
 
-/* cuadricula de imagenes */
+/* cuadro para ingresar los computadores comprados  */
 
-.board {
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 300px 300px 300px;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+#toShow {
+  display: none;
 }
 
-.box {
-display: flex;
-align-items: center;
-justify-content: center;
+.square {
+  padding: 40px;
+  text-align: center;
+  margin: 200px;
+  border: 1px solid rgb(100, 150, 243);
+  background-color: white;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+
+#icon {
+  width: 100px;
+}
+
+#message {
+  color: red;
 }
 
 /* footer  */
